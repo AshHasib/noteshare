@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "513845204516",
+    "firebase_url": "https://noteshare-a4514.firebaseio.com",
+    "project_id": "noteshare-a4514",
+    "storage_bucket": "noteshare-a4514.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:513845204516:android:14d6395824acdf55",
+        "android_client_info": {
+          "package_name": "com.example.hasib.noteshare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "513845204516-6oq5l7vv5glt8pu3u4feid8hca4t9bar.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.hasib.noteshare",
+            "certificate_hash": "4222d4bd6e91a29f3ef0cb3440a3a6936b4a058f"
+          }
+        },
+        {
+          "client_id": "513845204516-rufm2ased0km8c0ktqunqjshk0rqosdb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB46LA1iapxFyeXvwsacDaTGX-DmqvkQhU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "513845204516-rufm2ased0km8c0ktqunqjshk0rqosdb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

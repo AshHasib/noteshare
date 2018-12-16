@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+
+
+    <android.support.v7.widget.CardView
+        android:layout_margin="30dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:background="#EB213A"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="16dp"
+                android:background="@drawable/signup_gradient"
+                >
+
+                <ImageView
+
+                    android:layout_width="250dp"
+                    android:layout_height="65dp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@drawable/signup_ic" />
+
+                <EditText
+                    android:id="@+id/signUpFullName"
+                    android:ems="10"
+                    android:inputType="textPersonName"
+                    android:background="@drawable/signupedittextstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/ic_name"
+                    android:drawablePadding="10dp"
+                    android:hint="Full name"
+                    android:padding="12dp"
+                    />
+
+                <EditText
+                    android:id="@+id/signUpEmail"
+                    android:ems="10"
+                    android:inputType="textEmailAddress"
+                    android:background="@drawable/signupedittextstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:drawableLeft="@drawable/ic_email"
+                    android:drawablePadding="10dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Email"
+                    android:padding="12dp"
+                    />
+
+                <EditText
+                    android:id="@+id/signUpPhone"
+                    android:ems="10"
+                    android:inputType="number"
+                    android:background="@drawable/signupedittextstyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Phone Number"
+                    android:drawableLeft="@drawable/ic_phone"
+                    android:drawablePadding="10dp"
+                    android:padding="12dp"
+                    />
+
+
+                <EditText
+                    android:id="@+id/signUpPassword"
+                    android:ems="10"
+                    android:background="@drawable/signupedittextstyle"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:hint="Password"
+                    android:drawableLeft="@drawable/ic_pass"
+                    android:drawablePadding="10dp"
+                    android:padding="12dp"
+                    />
+                <EditText
+                    android:id="@+id/signUpRePassword"
+                    android:ems="10"
+                    android:background="@drawable/signupedittextstyle"
+                    android:inputType="textPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_gravity="center_horizontal"
+                    android:drawableLeft="@drawable/ic_pass"
+                    android:drawablePadding="10dp"
+                    android:hint="Re-Type Password"
+                    android:padding="12dp"
+                    />
+
+
+                <Button
+                    android:id="@+id/btnSignUp"
+                    android:text="Sign Up"
+                    android:background="@drawable/signupscreenbuttonstyle"
+                    android:layout_width="250dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <android.support.constraint.ConstraintLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+
+                    <ProgressBar
+                        android:id="@+id/progress"
+                        style="?android:attr/progressBarStyle"
+                        android:layout_width="182dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="20dp"
+                        android:indeterminateTint="@color/colorAzure"
+                        android:textAlignment="center"
+                        android:visibility="invisible"
+                        tools:layout_editor_absoluteX="-20dp"
+                        tools:layout_editor_absoluteY="0dp" />
+
+                    <TextView
+                        android:id="@+id/alreadyUserTxt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:text="@string/alreadyUser"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:layout_editor_absoluteY="48dp" />
+
+
+                </android.support.constraint.ConstraintLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

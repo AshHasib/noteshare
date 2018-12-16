@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:orientation="vertical"
+    android:background="@drawable/gradient"
+    tools:context=".LoginScreen">
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!-- Sample Logo-->
+
+            <TextView
+                android:id="@+id/loginT"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:fontFamily="cursive"
+                android:text="@string/notes_at_your_phone"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFFFFF"
+                android:textSize="40sp"
+                android:textStyle="bold|italic" />
+
+            <EditText
+                android:id="@+id/loginEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="80dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_email"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/username"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="20sp"
+                android:autofillHints="" tools:targetApi="o" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+            <EditText
+                android:id="@+id/loginPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="35dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/ic_pass"
+                android:drawablePadding="12dp"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="8dp"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF"
+                android:textSize="20dp"
+                android:autofillHints="" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#f9d7db" />
+
+
+            <Button
+                android:id="@+id/loginButton"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="70dp"
+                android:background="@drawable/background_login"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Login"
+
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/signUpButton"
+                style="@style/Base.TextAppearance.AppCompat.Body1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/background_login"
+                android:clickable="true"
+                android:padding="16dp"
+                android:text="Sign up"
+
+                android:textColor="#000000"
+                android:textStyle="bold" />
+
+            <ProgressBar
+                android:id="@+id/loginProgress"
+                android:visibility="invisible"
+                android:indeterminateTint="@color/colorAzure"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
