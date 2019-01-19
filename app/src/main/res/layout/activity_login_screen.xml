@@ -105,7 +105,6 @@
                 android:clickable="true"
                 android:padding="16dp"
                 android:text="Sign up"
-
                 android:textColor="#000000"
                 android:textStyle="bold" />
 

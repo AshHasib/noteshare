@@ -8,4 +8,14 @@
     <string name="login">Login</string>
     <string name="sign_up">Sign up</string>
     <string name="alreadyUser">Already a user? Click here</string>
+
+    <string-array name="courses">
+        <item>Data Communication</item>
+        <item>Applied Statistics</item>
+        <item>Numerical Analysis</item>
+        <item>Software Engineering</item>
+        <item>Sociology</item>
+        <item>Digital System Design</item>
+    </string-array>
+
 </resources>

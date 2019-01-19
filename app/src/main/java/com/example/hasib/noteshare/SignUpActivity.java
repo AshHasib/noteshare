@@ -85,7 +85,7 @@ public class SignUpActivity extends AppCompatActivity {
                     FirebaseDatabase.getInstance().getReference("Users")
                             .child(FirebaseAuth.getInstance().getCurrentUser().getUid())
                             .setValue(user).addOnCompleteListener(task1 -> {
-                                progressBar.setVisibility(View.GONE);
+                                progressBar.setVisibility(View.INVISIBLE);
                                 if(task1.isSuccessful()) {
                                     new AlertDialog.Builder(SignUpActivity.this)
                                             .setTitle("Welcome")
@@ -102,12 +102,14 @@ public class SignUpActivity extends AppCompatActivity {
                                 }
                                 else {
                                     Toast.makeText(getApplicationContext(),"All information can't be stored",Toast.LENGTH_LONG).show();
+                                    progressBar.setVisibility(View.INVISIBLE);
                                     clearAll();
                                 }
                     });
                     //Toast.makeText(getApplicationContext(),"User created",Toast.LENGTH_LONG).show();
                 }
                 else {
+                    progressBar.setVisibility(View.INVISIBLE);
                     Toast.makeText(getApplicationContext(),task.getException().toString(),Toast.LENGTH_LONG).show();
                 }
             });
@@ -115,6 +117,7 @@ public class SignUpActivity extends AppCompatActivity {
             //Toast.makeText(getApplicationContext(),"SignUp Successful",Toast.LENGTH_SHORT).show();
         }
         else {
+            progressBar.setVisibility(View.INVISIBLE);
             Toast.makeText(getApplicationContext(),"Signup error",Toast.LENGTH_SHORT).show();
         }
     }

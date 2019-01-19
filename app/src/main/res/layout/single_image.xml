@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:adjustViewBounds="true"
+        android:src="@drawable/ic_gallery"
+        android:id="@+id/singleImgUpload"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+    <TextView
+        android:layout_below="@+id/singleImgUpload"
+        android:text="Name"
+        android:id="@+id/singleImgName"
+        android:textAlignment="center"
+        android:textSize="16dp"
+        android:textColor="#000"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    
+    
+    
+</RelativeLayout>

@@ -2,8 +2,12 @@
 <resources>
     <color name="colorPrimary">#E60000</color>
     <color name="colorPrimaryDark">#B30000</color>
-    <color name="colorAccent">#0c0003</color>
+    <color name="colorAccent">#000000</color>
     <color name="colorAzure">#F2F4FC</color>
     <color name="colorFab">#20C2FF</color>
+    <color name="colorOffWhite">#E9EBEE</color>
+    <color name="colorInfoHead">#559C60</color>
+    <color name="colorInfoHeadLite">#90c398</color>
+    <color name="colorFeeBg">#F5F7FA</color>
 
 </resources>
